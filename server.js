@@ -11,7 +11,9 @@ app.use("/img", express.static(path.resolve(__dirname, "./public/assets/img")))
 app.use("/js", express.static(path.resolve(__dirname, "./public/assets/js")))
 app.use("/scss", express.static(path.resolve(__dirname, "./public/assets/scss")))
 
-app.get()
+app.get('/', (req, res) => {
+    return res.status(200).render('tables')
+})
 
 app.listen(process.env.SERVER_PORT, () => {
     console.log(`http://localhost:${process.env.SERVER_PORT}`)
