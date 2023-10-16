@@ -26,6 +26,9 @@ app.use("/scss", express.static(path.resolve(__dirname, "./public/assets/scss"))
  * /config_settings
  * /user_account_settings
  */
+app.get('/', (req, res) => {
+    return res.status(200).render('dashboard')
+})
 app.get('/budget_reports', (req, res) => {
     return res.status(200).render('budget_reports')
 })
