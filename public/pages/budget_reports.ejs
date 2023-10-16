@@ -35,8 +35,38 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <div class="form-floating">
-                      
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="unit_name" placeholder="name@example.com">
+                      <label for="unit_name">Unit/Office Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <select name="units" class="form-select" id="units">
+                        <option selected disabled>Select Unit/Office Division</option>
+                        <!-- to be changed -->
+                        <option value="unified_command">UNIFIED COMMAND</option>
+                        <option value="afpwssus">AFPWSSUs</option>
+                        <option value="command_group(ghq proper)">COMMAND GROUP(GHQ PROPER)</option>
+                        <option value="joint_staff(ghq proper)">JOINT STAFF(GHQ PROPER)</option>
+                        <option value="personal_staff(ghq proper)">PERSONAL STAFF(GHQ PROPER)</option>
+                        <option value="special_staff(ghq proper)">SPECIAL STAFF(GHQ PROPER)</option>
+                        <option value="technical_staff(ghq proper)">TECHNICAL STAFF(GHQ PROPER)</option>
+                      </select>
+                      <label for="units">Units/Office</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <select name="qtr" class="form-select" id="qtr">
+                        <option selected disabled>SELECT QUARTER</option>
+                        <!-- to be changed -->
+                        <option value="1st_qtr">1ST QTR</option>
+                        <option value="2nd_qtr">2ND QTR</option>
+                        <option value="3rd_qtr">3RD QTR</option>
+                        <option value="4th_qtr">4TH QTR</option>
+                      </select>
+                      <label for="qtr">QUARTER</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input name="qtrly_expense" type="number" class="form-control" id="qtrly_expense" placeholder="name@example.com">
+                      <label for="qtrly_expense">Quarterly Expense</label>
                     </div>
                   </div>
                   <div class="modal-footer">
@@ -67,6 +97,7 @@
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">4TH QTR</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">GRAND TOTAL</th>
                       <th class="text-secondary opacity-7"></th>
+                      <th class="text-secondary opacity-7"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -94,8 +125,13 @@
                         <p class="text-xs font-weight-bold mb-0">12,574,010.40</p>
                       </td>
                       <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        <a href="/edit_budget_report" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                           Edit
+                        </a>
+                      </td>
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                          Delete
                         </a>
                       </td>
                     </tr>
@@ -152,8 +188,13 @@
                         <p class="text-xs font-weight-bold mb-0">12,574,010.40</p>
                       </td>
                       <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        <a href="/edit_budget_report" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                           Edit
+                        </a>
+                      </td>
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                          Delete
                         </a>
                       </td>
                     </tr>
@@ -210,8 +251,13 @@
                         <p class="text-xs font-weight-bold mb-0">12,574,010.40</p>
                       </td>
                       <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        <a href="/edit_budget_report" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                           Edit
+                        </a>
+                      </td>
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                          Delete
                         </a>
                       </td>
                     </tr>
@@ -268,8 +314,13 @@
                         <p class="text-xs font-weight-bold mb-0">12,574,010.40</p>
                       </td>
                       <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        <a href="/edit_budget_report" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                           Edit
+                        </a>
+                      </td>
+                      <td class="align-middle">
+                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                          Delete
                         </a>
                       </td>
                     </tr>
