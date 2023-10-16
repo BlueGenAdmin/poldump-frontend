@@ -11,10 +11,22 @@ app.use("/img", express.static(path.resolve(__dirname, "./public/assets/img")))
 app.use("/js", express.static(path.resolve(__dirname, "./public/assets/js")))
 app.use("/scss", express.static(path.resolve(__dirname, "./public/assets/scss")))
 
-app.get('/', (req, res) => {
-    return res.status(200).render('tables')
+/**
+ * |======== ROUTES ========|
+ * /
+ * /budget_reports
+ * /ship_reports
+ * /access_reports
+ * /case_reports
+ * /end_user_reports
+ * /manage_settings
+ * /config_settings
+ * /user_account_settings
+ */
+app.get('/budget_reports', (req, res) => {
+    return res.status(200).render('budget_reports')
 })
 
 app.listen(process.env.SERVER_PORT, () => {
-    console.log(`http://localhost:${process.env.SERVER_PORT}`)
+    console.log(`http://localhost:${process.env.SERVER_PORT}/budget_reports`)
 })
